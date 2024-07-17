@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import AppsOnAirIOSCore
 
 class ViewController: UIViewController {
 
+    // let appUpdateManager = AppsOnAirServices()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+       /*  let appId = appUpdateManager.getAppId()
+        print(appId) */
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

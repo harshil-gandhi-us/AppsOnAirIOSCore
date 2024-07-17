@@ -31,6 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'AppsOnAirIOSCore/Classes/**/*'
+  s.dependency 'ReachabilitySwift'
   
   # s.resource_bundles = {
   #   'AppsOnAirIOSCore' => ['AppsOnAirIOSCore/Assets/*.png']

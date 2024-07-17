@@ -1,0 +1,27 @@
+{
+  "name": "AppsOnAirIOSCore",
+  "version": "0.1.0",
+  "summary": "A short description of AppsOnAirIOSCore.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/harshil-gandhi-16/AppsOnAirIOSCore",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "harshil-gandhi-16": "harshil.gandhi@logicwind.com"
+  },
+  "source": {
+    "git": "https://github.com/harshil-gandhi-16/AppsOnAirIOSCore.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AppsOnAirIOSCore/Classes/**/*",
+  "dependencies": {
+    "ReachabilitySwift": [
+
+    ]
+  }
+}
