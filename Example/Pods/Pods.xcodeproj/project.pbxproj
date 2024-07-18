@@ -83,7 +83,7 @@
 		61526EB77C6F9215C36F4D20863C6FD5 /* Pods-AppsOnAirIOSCore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppsOnAirIOSCore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		67CBFE4CF2928519E7FA7069F06CF18E /* Pods-AppsOnAirIOSCore_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppsOnAirIOSCore_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6875441762B3A3980AB8469A87AE98ED /* AppsOnAirIOSCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppsOnAirIOSCore.release.xcconfig; sourceTree = "<group>"; };
-		68B15AFDCFDCFDAC34265972FF398314 /* Pods-AppsOnAirIOSCore_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppsOnAirIOSCore_Example"; path = Pods_AppsOnAirIOSCore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B15AFDCFDCFDAC34265972FF398314 /* Pods_AppsOnAirIOSCore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsOnAirIOSCore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EF9DCB9E3BAF3B8587D6259E62F55BF /* Pods-AppsOnAirIOSCore_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppsOnAirIOSCore_Tests.modulemap"; sourceTree = "<group>"; };
 		76EDC6580F46952E510E067593F944EB /* Pods-AppsOnAirIOSCore_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppsOnAirIOSCore_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		791D75E7F7865C2298F8217A593653F8 /* AppsOnAirServices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppsOnAirServices.swift; path = AppsOnAirIOSCore/Classes/AppsOnAirServices.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		8963E12987DC02B1646A6A9035AEDB68 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA112D43090B3A8AFC255C832F415D6C /* Pods-AppsOnAirIOSCore_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppsOnAirIOSCore_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B3B48F8835BF206FF28FA400EEC02079 /* Pods-AppsOnAirIOSCore_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppsOnAirIOSCore_Tests"; path = Pods_AppsOnAirIOSCore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B48F8835BF206FF28FA400EEC02079 /* Pods_AppsOnAirIOSCore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsOnAirIOSCore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB72D6BB7F9781F3FA03FD2A53229D6 /* Pods-AppsOnAirIOSCore_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppsOnAirIOSCore_Example.modulemap"; sourceTree = "<group>"; };
 		CB73A169B966752A6ACFCE20E84907CC /* AppsOnAirIOSCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppsOnAirIOSCore-prefix.pch"; sourceTree = "<group>"; };
 		CEE4E18813511EA16D228D99245851CD /* Pods-AppsOnAirIOSCore_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppsOnAirIOSCore_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,8 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				478083F9DDA1601A4382E7CD92EE5F9E /* AppsOnAirIOSCore.framework */,
-				68B15AFDCFDCFDAC34265972FF398314 /* Pods-AppsOnAirIOSCore_Example */,
-				B3B48F8835BF206FF28FA400EEC02079 /* Pods-AppsOnAirIOSCore_Tests */,
+				68B15AFDCFDCFDAC34265972FF398314 /* Pods_AppsOnAirIOSCore_Example.framework */,
+				B3B48F8835BF206FF28FA400EEC02079 /* Pods_AppsOnAirIOSCore_Tests.framework */,
 				21B03CA622E690725A6626C088E1D09F /* Reachability.framework */,
 			);
 			name = Products;
@@ -378,7 +378,7 @@
 			);
 			name = "Pods-AppsOnAirIOSCore_Tests";
 			productName = Pods_AppsOnAirIOSCore_Tests;
-			productReference = B3B48F8835BF206FF28FA400EEC02079 /* Pods-AppsOnAirIOSCore_Tests */;
+			productReference = B3B48F8835BF206FF28FA400EEC02079 /* Pods_AppsOnAirIOSCore_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		94B163AF333895C1B28651575955BE0A /* Pods-AppsOnAirIOSCore_Example */ = {
@@ -398,7 +398,7 @@
 			);
 			name = "Pods-AppsOnAirIOSCore_Example";
 			productName = Pods_AppsOnAirIOSCore_Example;
-			productReference = 68B15AFDCFDCFDAC34265972FF398314 /* Pods-AppsOnAirIOSCore_Example */;
+			productReference = 68B15AFDCFDCFDAC34265972FF398314 /* Pods_AppsOnAirIOSCore_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B7A0CE8AECBC642D17AB1907A7D4C093 /* AppsOnAirIOSCore */ = {
@@ -428,6 +428,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B7A0CE8AECBC642D17AB1907A7D4C093 = {
+						LastSwiftMigration = 1530;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -572,7 +577,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -626,7 +631,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-AppsOnAirIOSCore_Tests/Pods-AppsOnAirIOSCore_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AppsOnAirIOSCore_Tests/Pods-AppsOnAirIOSCore_Tests.modulemap";
@@ -667,7 +672,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -752,7 +757,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-AppsOnAirIOSCore_Tests/Pods-AppsOnAirIOSCore_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AppsOnAirIOSCore_Tests/Pods-AppsOnAirIOSCore_Tests.modulemap";
@@ -852,7 +857,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-AppsOnAirIOSCore_Example/Pods-AppsOnAirIOSCore_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AppsOnAirIOSCore_Example/Pods-AppsOnAirIOSCore_Example.modulemap";
@@ -885,7 +890,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-AppsOnAirIOSCore_Example/Pods-AppsOnAirIOSCore_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AppsOnAirIOSCore_Example/Pods-AppsOnAirIOSCore_Example.modulemap";

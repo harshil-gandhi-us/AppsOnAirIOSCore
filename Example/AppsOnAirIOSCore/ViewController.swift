@@ -11,13 +11,13 @@ import AppsOnAirIOSCore
 
 class ViewController: UIViewController {
 
-    // let appUpdateManager = AppsOnAirServices()
+    let appUpdateManager = AppsOnAirServices()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       /*  let appId = appUpdateManager.getAppId()
-        print(appId) */
-        
+         let appId = appUpdateManager.getAppId()
+         print(appId)
+         let  result = appUpdateManager.networkStatusDidChange()   
         // Do any additional setup after loading the view, typically from a nib.
     }
 

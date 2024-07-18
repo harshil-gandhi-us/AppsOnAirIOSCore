@@ -7,9 +7,29 @@ public class AppsOnAirServices : NSObject, NetworkServiceDelegate {
     
     
     private var appId: String = ""
-    private var isNetworkConnected: Bool = false
+    public var isNetworkConnected: Bool = false {
+            didSet {
+                // This block will be executed when the value changes
+                if isNetworkConnected {
+                    // Call your specific function when streaming starts
+                    startStreaming()
+                } else {
+                    // Call another function when streaming stops
+                    stopStreaming()
+                }
+            }
+        }
     private var window: UIWindow?
+    
+    func startStreaming() {
+            print("Streaming started!")
+            // Your implementation here
+        }
 
+        func stopStreaming() {
+            print("Streaming stopped!")
+            // Your implementation here
+        }
     var networkService: NetworkService = ReachabilityNetworkService()
 
     public func getAppId() -> (String) {
@@ -24,4 +44,11 @@ public class AppsOnAirServices : NSObject, NetworkServiceDelegate {
         print("Network is \(status)")
         isNetworkConnected = status
     }
+    
+    
+    public func networkStatusDidChange()->Bool {
+        print("Network is \(isNetworkConnected)")
+        return isNetworkConnected
+    }
+    
 }
