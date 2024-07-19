@@ -1,11 +1,10 @@
 PODS:
   - AppsOnAirIOSCore (0.1.0):
     - ReachabilitySwift
-  - ReachabilitySwift (3)
+  - ReachabilitySwift (5.2.3)
 
 DEPENDENCIES:
   - AppsOnAirIOSCore (from `../`)
-  - ReachabilitySwift (~> 3.0)
 
 SPEC REPOS:
   trunk:
@@ -17,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AppsOnAirIOSCore: 7bce78f8ea0dbdd1ac43d206d537314c67afe28c
-  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  ReachabilitySwift: 7f151ff156cea1481a8411701195ac6a984f4979
 
-PODFILE CHECKSUM: b6af90c167fe35c7565bad1a3ce701686932fd84
+PODFILE CHECKSUM: 40e1810660c1abf400105855e27a9ddb65d9bc0b
 
 COCOAPODS: 1.15.2
