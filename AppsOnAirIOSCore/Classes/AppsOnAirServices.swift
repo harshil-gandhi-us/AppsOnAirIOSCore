@@ -3,7 +3,7 @@
 import UIKit
 import AVFoundation
 
-public class AppsOnAirServices : NSObject, NetworkServiceDelegate {
+public class AppsOnAirCoreServices : NSObject, NetworkServiceDelegate {
     
     
     private var appId: String = ""

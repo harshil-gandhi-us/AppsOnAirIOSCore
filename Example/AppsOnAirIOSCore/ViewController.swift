@@ -11,7 +11,7 @@ import AppsOnAirIOSCore
 
 class ViewController: UIViewController {
 
-    let appUpdateManager = AppsOnAirServices()
+    let appUpdateManager = AppsOnAirCoreServices()
 
     override func viewDidLoad() {
         super.viewDidLoad()
