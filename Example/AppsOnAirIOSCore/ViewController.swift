@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
          let appId = appUpdateManager.getAppId()
          print(appId)
-         let  result = appUpdateManager.networkStatusDidChange()   
+        _ = appUpdateManager.networkStatusDidChange()   
         // Do any additional setup after loading the view, typically from a nib.
     }
 
