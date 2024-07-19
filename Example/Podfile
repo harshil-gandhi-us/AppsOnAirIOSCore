@@ -4,6 +4,8 @@ platform :ios, '12.0'
 
 target 'AppsOnAirIOSCore_Example' do
   pod 'AppsOnAirIOSCore', :path => '../'
+  
+  pod 'ReachabilitySwift', '~> 3.0'
 
   target 'AppsOnAirIOSCore_Tests' do
     inherit! :search_paths
