@@ -25,12 +25,13 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'harshil-gandhi-16' => 'harshil.gandhi@logicwind.com' }
-  s.source           = { :git => 'https://github.com/harshil-gandhi-16/AppsOnAirIOSCore.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/harshil-gandhi-16/AppsOnAirIOSCore.git',  :branch => 'dev' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'AppsOnAirIOSCore/Classes/**/*'
+  
   s.dependency 'ReachabilitySwift'
   
   # s.resource_bundles = {
