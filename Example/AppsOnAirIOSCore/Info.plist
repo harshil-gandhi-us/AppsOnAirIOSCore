@@ -14,9 +14,6 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
-	<!-- Set AppId -->
-  <!--   <key>appId</key>
-    <string>f4b12b26-f2dd-4d47-b2cf-fe3fc930e875</string> -->
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
@@ -35,8 +32,10 @@
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>appId</key>
+	<string>f4b12b26-f2dd-4d47-b2cf-fe3fc930e875</string>
 </dict>
 </plist>

@@ -11,20 +11,19 @@ import AppsOnAirIOSCore
 
 class ViewController: UIViewController {
 
-    let appUpdateManager = AppsOnAirCoreServices()
+//        let appUpdateManager = AppsOnAirCoreServices()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         let appId = appUpdateManager.getAppId()
-         print(appId)
-        _ = appUpdateManager.networkStatusDidChange()   
-        // Do any additional setup after loading the view, typically from a nib.
+//        let appId = appUpdateManager.getAppId()
+//        print("App Id: \(appId)")
+//        let isConnect = appUpdateManager.isConnectedNetwork()
+//        print(isConnect)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 
