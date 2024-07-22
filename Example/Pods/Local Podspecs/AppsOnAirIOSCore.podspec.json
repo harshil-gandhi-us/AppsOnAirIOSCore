@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/harshil-gandhi-16/AppsOnAirIOSCore.git",
-    "branch": "dev"
+    "branch": "main"
   },
   "platforms": {
     "ios": "12.0"
