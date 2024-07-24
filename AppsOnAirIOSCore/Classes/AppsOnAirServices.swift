@@ -23,8 +23,16 @@ public class AppsOnAirCoreServices : NSObject, NetworkServiceDelegate {
     }
     
     func networkStatusDidChange(status: Bool) {
-        print("Network is \(status)")
         isNetworkConnected = status
+        networkStatusChangeHandler?(status)
     }
+    // Closure type for network status change handler
+    public typealias NetworkStatusChangeHandler = (Bool) -> Void
+    private var networkStatusChangeHandler: NetworkStatusChangeHandler?
+      
+      // Method to set the network status change handler
+    public func networkStatusListnerHandler(_ handler: @escaping NetworkStatusChangeHandler) {
+          networkStatusChangeHandler = handler
+      }
     
 }

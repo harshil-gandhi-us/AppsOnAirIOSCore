@@ -11,14 +11,17 @@ import AppsOnAirIOSCore
 
 class ViewController: UIViewController {
 
-//        let appUpdateManager = AppsOnAirCoreServices()
+        let appUpdateManager = AppsOnAirCoreServices()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let appId = appUpdateManager.getAppId()
-//        print("App Id: \(appId)")
-//        let isConnect = appUpdateManager.isConnectedNetwork()
-//        print(isConnect)
+        let appId = appUpdateManager.getAppId()
+        print("App Id: \(appId)")
+        let _ = appUpdateManager.isConnectedNetwork()
+        appUpdateManager.networkStatusListnerHandler { Connected in
+            print("isConnect \(Connected)")
+        }
+//
     }
 
     override func didReceiveMemoryWarning() {

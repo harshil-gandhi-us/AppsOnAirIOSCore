@@ -42,7 +42,6 @@ class ReachabilityNetworkService: NetworkService {
         guard let reachability = notification.object as? Reachability else { return }
 
         let isConnected = reachability.connection != .unavailable
-        print(isConnected)
         delegate?.networkStatusDidChange(status: isConnected)
     }
 }
