@@ -11,13 +11,13 @@ import AppsOnAirIOSCore
 
 class ViewController: UIViewController {
 
-        let appUpdateManager = AppsOnAirCoreServices()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let appUpdateManager = AppsOnAirCoreServices.shared
         let appId = appUpdateManager.getAppId()
         print("App Id: \(appId)")
-        let _ = appUpdateManager.isConnectedNetwork()
         appUpdateManager.networkStatusListnerHandler { Connected in
             print("isConnect \(Connected)")
         }
