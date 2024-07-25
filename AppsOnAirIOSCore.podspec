@@ -33,6 +33,9 @@ TODO: Add long description of the pod here.
   s.source_files = 'AppsOnAirIOSCore/Classes/**/*'
   
   s.dependency 'ReachabilitySwift'
+
+  s.dependency 'iOSDropDown'
+  s.dependency 'Toast-Swift'
   
   # s.resource_bundles = {
   #   'AppsOnAirIOSCore' => ['AppsOnAirIOSCore/Assets/*.png']
