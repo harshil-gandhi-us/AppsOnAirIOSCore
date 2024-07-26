@@ -11,8 +11,6 @@ import AppsOnAirIOSCore
 
 class ViewController: UIViewController {
 
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         let appUpdateManager = AppsOnAirCoreServices.shared
@@ -21,7 +19,6 @@ class ViewController: UIViewController {
         appUpdateManager.networkStatusListnerHandler { Connected in
             print("isConnect \(Connected)")
         }
-//
     }
 
     override func didReceiveMemoryWarning() {

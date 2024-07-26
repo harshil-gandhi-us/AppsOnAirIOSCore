@@ -4,28 +4,30 @@ import UIKit
 import AVFoundation
 //
 public class AppsOnAirCoreServices : NSObject, NetworkServiceDelegate {
+    
     public static let shared = AppsOnAirCoreServices()
     private var appId: String = ""
     public var isNetworkConnected: Bool = false
     private var window: UIWindow?
-    private var errorMessage:String = "AppsOnAir AppId is missing for more details: \n https://documentation.appsonair.com"
+    private var errorMessage:String = "AppsOnAir Appid is Not initialize   for more details: \n https://documentation.appsonair.com"
     var networkService: NetworkService = ReachabilityNetworkService()
 
-    public func getAppId() -> (String) {
+    public func getAppId()->  String{
         self.appId = Bundle.main.infoDictionary?["appId"] as? String ?? "";
         if self.appId == "" {
             #if DEBUG
-                fatalError(errorMessage)
+            print(MyError.runtimeError(errorMessage))
+            exit(-1)
             #else
-                print(errorMessage)
+            print(MyError.runtimeError(errorMessage))
             #endif
         }
-        else{
+        else {
             return appId
         }
 
     }
-    
+   
     public func isConnectedNetwork()-> Bool{
         return isNetworkConnected
     }
@@ -44,5 +46,8 @@ public class AppsOnAirCoreServices : NSObject, NetworkServiceDelegate {
         networkService.startMonitoring()
         networkStatusChangeHandler = handler
       }
-    
+    //Throw Error
+    enum MyError: Error {
+        case runtimeError(String)
+    }
 }
