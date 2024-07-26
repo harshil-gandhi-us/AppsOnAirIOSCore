@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         let appUpdateManager = AppsOnAirCoreServices.shared
         let appId = appUpdateManager.getAppId()
         print("App Id: \(appId)")
-        appUpdateManager.networkStatusListnerHandler { Connected in
+        appUpdateManager.networkStatusListenerHandler { Connected in
             print("isConnect \(Connected)")
         }
     }

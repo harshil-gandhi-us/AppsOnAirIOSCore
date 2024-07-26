@@ -9,15 +9,17 @@ public class AppsOnAirCoreServices : NSObject, NetworkServiceDelegate {
     private var appId: String = ""
     public var isNetworkConnected: Bool = false
     private var window: UIWindow?
-    private var errorMessage:String = "AppsOnAir Appid is Not initialize   for more details: \n https://documentation.appsonair.com"
+    private var errorMessage:String = "AppsOnAir Appid is Not initialized for more details: \n https://documentation.appsonair.com"
     var networkService: NetworkService = ReachabilityNetworkService()
 
     public func getAppId()->  String{
-        if self.appId != "" {
+      // To fetch appId once id set then again not read from Info plist . 
+      /*   if self.appId != "" {
             return self.appId
         }else{
             self.appId = Bundle.main.infoDictionary?["appId"] as? String ?? "";
-        }
+        } */
+        self.appId = Bundle.main.infoDictionary?["appId"] as? String ?? "";
         if self.appId == "" {
             #if DEBUG
             print(MyError.runtimeError(errorMessage))
@@ -44,7 +46,7 @@ public class AppsOnAirCoreServices : NSObject, NetworkServiceDelegate {
     private var networkStatusChangeHandler: NetworkStatusChangeHandler?
       
       // Method to set the network status change handler
-    public func networkStatusListnerHandler(_ handler: @escaping NetworkStatusChangeHandler) {
+    public func networkStatusListenerHandler(_ handler: @escaping NetworkStatusChangeHandler) {
         networkService.delegate = self
         networkService.startMonitoring()
         networkStatusChangeHandler = handler
