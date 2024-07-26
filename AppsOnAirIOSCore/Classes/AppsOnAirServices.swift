@@ -13,7 +13,11 @@ public class AppsOnAirCoreServices : NSObject, NetworkServiceDelegate {
     var networkService: NetworkService = ReachabilityNetworkService()
 
     public func getAppId()->  String{
-        self.appId = Bundle.main.infoDictionary?["appId"] as? String ?? "";
+        if self.appId != "" {
+            return self.appId
+        }else{
+            self.appId = Bundle.main.infoDictionary?["appId"] as? String ?? "";
+        }
         if self.appId == "" {
             #if DEBUG
             print(MyError.runtimeError(errorMessage))
@@ -23,9 +27,8 @@ public class AppsOnAirCoreServices : NSObject, NetworkServiceDelegate {
             #endif
         }
         else {
-            return appId
+            return self.appId
         }
-
     }
    
     public func isConnectedNetwork()-> Bool{
