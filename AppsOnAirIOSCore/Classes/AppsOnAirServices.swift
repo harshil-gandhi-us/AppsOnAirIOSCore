@@ -4,8 +4,7 @@ import UIKit
 import AVFoundation
 //
 public class AppsOnAirCoreServices : NSObject, NetworkServiceDelegate {
-    
-    public static let shared = AppsOnAirCoreServices()
+
     private var appId: String = ""
     public var isNetworkConnected: Bool = false
     private var window: UIWindow?
