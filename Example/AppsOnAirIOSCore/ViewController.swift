@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let appId = appUpdateManager.getAppId()
+        
         print("App Id: \(appId)")
+        appUpdateManager.initialize()
         appUpdateManager.networkStatusListenerHandler { Connected in
             print("isConnect \(Connected)")
         }
