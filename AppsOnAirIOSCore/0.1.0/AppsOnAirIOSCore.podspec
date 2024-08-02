@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.swift_version  = '5.0'
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'AppsOnAirIOSCore/Classes/**/*'
+  s.source_files = 'Classes/**/*'
   
   s.dependency 'ReachabilitySwift'
   
