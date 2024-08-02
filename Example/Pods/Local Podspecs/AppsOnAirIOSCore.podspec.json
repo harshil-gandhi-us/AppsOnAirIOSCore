@@ -13,15 +13,17 @@
   },
   "source": {
     "git": "https://github.com/harshil-gandhi-us/AppsOnAirIOSCore.git",
-    "branch": "dev"
+    "tag": "0.1.0"
   },
+  "swift_versions": "5.0",
   "platforms": {
     "ios": "12.0"
   },
-  "source_files": "AppsOnAirIOSCore/Classes/**/*",
+  "source_files": "AppsOnAirIOSCore/Classes/**/*.{h,m,swift}",
   "dependencies": {
     "ReachabilitySwift": [
 
     ]
-  }
+  },
+  "swift_version": "5.0"
 }
