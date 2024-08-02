@@ -24,17 +24,17 @@ public class AppsOnAirCoreServices : NSObject, NetworkServiceDelegate {
             self.appId = Bundle.main.infoDictionary?["appId"] as? String ?? "";
         } */
         self.appId = Bundle.main.infoDictionary?["appId"] as? String ?? "";
-        if self.appId == "" {
-            #if DEBUG
-            print(MyError.runtimeError(errorMessage))
-            exit(-1)
-            #else
-            print(MyError.runtimeError(errorMessage))
-            #endif
-        }
-        else {
-            return self.appId
-        }
+        // if self.appId == "" {
+        //     #if DEBUG
+        //     print(MyError.runtimeError(errorMessage))
+        //     return self.appId
+        //     // exit(-1)
+        //     #else
+        //     print(MyError.runtimeError(errorMessage))
+        //     return self.appId
+        //     #endif
+        // }
+        return self.appId
     }
    
     public func isConnectedNetwork()-> Bool{
