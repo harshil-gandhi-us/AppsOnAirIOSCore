@@ -23,13 +23,13 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'harshil-gandhi-16' => 'harshil.gandhi@logicwind.com' }
-  s.source           = { :git => 'https://github.com/harshil-gandhi-us/AppsOnAirIOSCore.git', :tag => "#{s.version}" }
+  s.source           = { :git => 'https://github.com/harshil-gandhi-us/AppsOnAirIOSCore.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.swift_version  = '5.0'
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'AppsOnAirIOSCore/Classes/**/*.{h,m,swift}'
+  s.source_files = 'AppsOnAirIOSCore/Classes/**/*'
   
   s.dependency 'ReachabilitySwift'
   
