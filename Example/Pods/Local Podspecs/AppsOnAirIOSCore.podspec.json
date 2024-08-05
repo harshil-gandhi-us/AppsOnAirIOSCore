@@ -19,7 +19,8 @@
   "platforms": {
     "ios": "12.0"
   },
-  "source_files": "AppsOnAirIOSCore/Classes/**/*.{h,m,swift}",
+  "source_files": "AppsOnAirIOSCore/Classes/**/*.{swift,h,m}",
+  "public_header_files": "AppsOnAirIOSCore/Classes/**/*.h",
   "dependencies": {
     "ReachabilitySwift": [
 

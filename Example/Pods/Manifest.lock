@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppsOnAirIOSCore: 71ee1e4c869434c3ba20bf5b130eebc7e15f4f1d
+  AppsOnAirIOSCore: b891dacd43dd1177c87e5ff30c2c70ffdcf6f1ad
   ReachabilitySwift: 7f151ff156cea1481a8411701195ac6a984f4979
 
 PODFILE CHECKSUM: 40e1810660c1abf400105855e27a9ddb65d9bc0b
