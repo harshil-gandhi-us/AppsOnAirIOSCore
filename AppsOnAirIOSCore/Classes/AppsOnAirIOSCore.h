@@ -1,7 +1,10 @@
 #import <Foundation/Foundation.h>
 
-@interface AppsOnAirIOSCore : NSObject
+@interface AppsOnAirCoreServices : NSObject
 
-- (void)sayHello;
+@property (nonatomic, strong, readonly) NSString *appId;
+
+- (void)initialize;
+- (void)networkStatusListenerHandler:(void (^)(BOOL connected))handler;
 
 @end
