@@ -10,9 +10,6 @@
 #endif
 #endif
 
-#import "AppsOnAirIOSCore-Bridging-Header.h"
-#import "AppsOnAirIOSCore-Swift.h"
-#import "AppsOnAirIOSCore.h"
 
 FOUNDATION_EXPORT double AppsOnAirIOSCoreVersionNumber;
 FOUNDATION_EXPORT const unsigned char AppsOnAirIOSCoreVersionString[];
