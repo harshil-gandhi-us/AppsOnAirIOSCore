@@ -1,1 +1,1 @@
-#import "AppsOnAirIOSCore.h"
+#import "AppsOnAirIOSCore-Swift.h"

@@ -21,6 +21,9 @@
   },
   "source_files": "AppsOnAirIOSCore/Classes/**/*",
   "public_header_files": "AppsOnAirIOSCore/Classes/**/*.h",
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
   "dependencies": {
     "ReachabilitySwift": [
 

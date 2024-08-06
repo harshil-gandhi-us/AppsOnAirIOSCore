@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
   # s.source_files = '.{h,m,swift}'
   s.source_files = 'AppsOnAirIOSCore/Classes/**/*'
   s.public_header_files = 'AppsOnAirIOSCore/Classes/**/*.h'
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   s.dependency 'ReachabilitySwift'
   
   
