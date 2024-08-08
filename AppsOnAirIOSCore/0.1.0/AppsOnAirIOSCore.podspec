@@ -29,9 +29,10 @@ Pod::Spec.new do |s|
   s.swift_version  = '5.0'
   s.ios.deployment_target = '12.0'
 
+  # s.source_files = '.{h,m,swift}'
   s.source_files = 'AppsOnAirIOSCore/Classes/**/*'
-  
   s.dependency 'ReachabilitySwift'
+  
   
   # s.resource_bundles = {
   #   'AppsOnAirIOSCore' => ['AppsOnAirIOSCore/Assets/*.png']
